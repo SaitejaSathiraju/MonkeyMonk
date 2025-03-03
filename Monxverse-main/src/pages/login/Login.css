@@ -1,0 +1,12 @@
+.login-card{
+    background: url("../../assets/login_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.registration-card{
+    background: url("../../assets/registration_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}

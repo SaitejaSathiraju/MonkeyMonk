@@ -1,0 +1,71 @@
+.social-media ul {
+    list-style: none;
+  }
+.social-media li:hover{
+color: #fcb814;
+}
+.icon-content {
+  margin-right: 12px;
+  position: relative;
+}
+.icon-content a {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: #4d4d4d;
+  background-color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+.icon-content a:hover {
+  box-shadow: 3px 2px 45px 0px rgb(0 0 0 / 12%);
+}
+.icon-content a svg {
+  position: relative;
+  z-index: 1;
+  width: 21px;
+  height: 21px;
+}
+.icon-content a:hover {
+  color: white;
+}
+.icon-content a .filled {
+  position: absolute;
+  top: auto;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background-color: #000;
+  transition: all 0.3s ease-in-out;
+}
+.icon-content a:hover .filled {
+  height: 100%;
+}
+
+.icon-content a[data-social="linkedin"] .filled{
+  background-color: #0b66c2;
+}
+
+.icon-content a[data-social="twitter"] .filled {
+  background-color: #1DA1F2;
+}
+.icon-content a[data-social="instagram"] .filled{
+  background: linear-gradient(
+    45deg,
+    #405de6,
+    #5b51db,
+    #b33ab4,
+    #c135b4,
+    #e1306c,
+    #fd1f1f
+  );
+}
+.icon-content a[data-social="youtube"] .filled{
+  background-color: #ff0000;
+}
+  

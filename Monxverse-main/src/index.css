@@ -1,0 +1,212 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Play:wght@700&display=swap"); */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background: #f1f1f1;
+  }
+  h1 {
+    @apply text-xl font-medium capitalize;
+  }
+}
+
+.link {
+  @apply p-2.5 flex rounded-md gap-6 items-center md:cursor-pointer cursor-default duration-300 font-medium;
+}
+
+.active {
+  @apply bg-blue-100 text-yellow-400;
+}
+
+@layer components {
+  .btn {
+     @apply bg-transparent border border-transparent rounded-md text-white cursor-pointer inline-block text-base font-semibold py-2 px-4 text-center transition align-middle select-none;
+  }
+  .btn-sm {
+     @apply py-1 px-2 text-sm rounded-md;
+  }
+  .btn-lg {
+     @apply py-2 px-4 text-lg rounded-lg;
+  }
+  .card {
+     @apply bg-white relative flex flex-col min-w-0 break-words rounded-md;
+  }
+  .card-body {
+     @apply flex-auto p-5;
+  }
+}
+
+
+body {
+   margin: 0;
+   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+     sans-serif;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+ }
+ 
+ code {
+   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+     monospace;
+ }
+ 
+ .pac-container:after{
+   display:none !important;
+ }
+ 
+ .pac-container {
+     background-color: #ffffff;
+     position: absolute!important;
+     z-index: 1000;
+     border-radius: 6px;
+     font-family: Arial, sans-serif;
+     box-shadow: none;
+     overflow: hidden;
+     border: none;
+     margin-top: 8px;
+     box-shadow: 0 2px 3px -1px rgba(61, 61, 61, 0.1), 0 2px 4px -1px rgba(86, 86, 86, 0.06);
+ }
+ 
+ .pac-logo:after {
+     content: "";
+     padding: 1px 1px 1px 0;
+     height: 16px;
+     text-align: right;
+     display: block;
+     background-image: url(https://maps.gstatic.com/mapfiles/api-3/images/powered-by-google-on-white3.png);
+     background-position: right;
+     background-repeat: no-repeat;
+     background-size: 120px 14px
+ }
+ .hdpi.pac-logo:after {
+     background-image: url(https://maps.gstatic.com/mapfiles/api-3/images/powered-by-google-on-white3_hdpi.png)
+ }
+ .pac-item {
+     cursor: default;
+     padding: 4px 16px;
+     text-overflow: ellipsis;
+     overflow: hidden;
+     white-space: nowrap;
+     line-height: 30px;
+     text-align: left;
+     font-size: 11px;
+     color: #999;
+     border: none;
+ }
+ .pac-item:hover {
+     background-color: #fafafa
+ }
+ .pac-item-selected,
+ .pac-item-selected:hover {
+     background-color: #ebf2fe;
+ }
+ .pac-matched {
+     font-weight: 700
+ }
+ .pac-item-query {
+     font-size: 13px;
+     padding-right: 3px;
+     color: #000
+ }
+ .pac-icon {
+     width: 15px;
+     height: 20px;
+     margin-right: 7px;
+     margin-top: 6px;
+     display: inline-block;
+     vertical-align: top;
+     background-image: url(https://maps.gstatic.com/mapfiles/api-3/images/autocomplete-icons.png);
+     background-size: 34px
+ }
+ .hdpi .pac-icon {
+     background-image: url(https://maps.gstatic.com/mapfiles/api-3/images/autocomplete-icons_hdpi.png)
+ }
+ .pac-icon-search {
+     background-position: -1px -1px
+ }
+ .pac-item-selected .pac-icon-search {
+     background-position: -18px -1px
+ }
+ .pac-icon-marker {
+     background-position: -1px -161px
+ }
+ .pac-item-selected .pac-icon-marker {
+     background-position: -18px -161px
+ }
+ .pac-placeholder {
+     color: gray
+ } 
+ /* .PhoneInput{
+  position: relative; 
+padding-top: 1rem;
+padding-bottom: 1rem; 
+padding-left: 1.5rem; 
+padding-right: 2.5rem; 
+flex-grow: 1; 
+border-radius: 0.75rem; 
+border-width: 1px; 
+width: 100%; 
+line-height: 1.25; 
+text-align: left; 
+color: #000000; 
+background-color:#f3f4f6; 
+transition-property: all;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+transition-duration: 300ms; 
+cursor: pointer;
+}
+.PhoneInputInput{
+  background-color:#f3f4f6; 
+
+}
+.PhoneInputInput:focus {
+outline: none;
+} */
+
+
+.auth-bg{
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.toggle-checkbox:checked {
+  @apply: right-0 border-green-400;
+  right: 0;
+  border-color: #68D391;
+}
+.toggle-checkbox:checked + .toggle-label {
+  @apply: bg-green-400;
+  background-color: #68D391;
+}
+
+.blob {
+  width: 240px;
+  height: 240px;
+  background-color: #fcb814;
+  position: absolute;
+  -webkit-filter: blur(40px);
+  filter: blur(40px);
+  opacity: 0.3;
+  overflow: hidden;
+  border-radius: 120px;
+  z-index: 0;
+  box-shadow: 0 0 30px 30px rgba(52, 144, 220, 0.3);
+  pointer-events: none;
+  user-select: none;
+}
+.blob-top-left {
+  top: 0;
+  left: 0;
+}
+.blob-bottom-right {
+  bottom: 0;
+  right: 0;
+}

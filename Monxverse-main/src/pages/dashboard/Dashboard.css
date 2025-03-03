@@ -1,0 +1,6 @@
+.banner-img{
+    background: url('../../assets/travel.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}

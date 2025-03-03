@@ -1,0 +1,75 @@
+{
+  "name": "monxverse_github",
+  "version": "0.1.0",
+  "homepage": "https://github.com/MonkeyMonk2023/Monxverse",
+  "private": false,
+  "dependencies": {
+    "@fortawesome/free-solid-svg-icons": "^6.5.2",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@google/generative-ai": "^0.10.0",
+    "@react-hook/media-query": "^1.1.1",
+    "@tailwindcss/line-clamp": "^0.4.4",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "babel-plugin-transform-remove-console": "^6.9.4",
+    "dotenv": "^16.4.5",
+    "emailjs-com": "^3.2.0",
+    "firebase": "^9.15.0",
+    "framer-motion": "^11.0.28",
+    "gh-pages": "^6.1.1",
+    "gsap": "^3.12.5",
+    "otp-input-react": "^0.3.0",
+    "postcss": "^8.4.38",
+    "react": "^18.2.0",
+    "react-datepicker": "^6.6.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^5.0.1",
+    "react-phone-input-2": "^2.15.1",
+    "react-phone-number-input": "^3.4.1",
+    "react-responsive": "^10.0.0",
+    "react-router-dom": "^6.22.3",
+    "react-scripts": "5.0.1",
+    "react-toastify": "^10.0.5",
+    "simplebar-react": "^3.2.4",
+    "uuid": "^9.0.1",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.3"
+  },
+  "babel": {
+    "plugins": ["transform-remove-console"],
+    "env": {
+      "production": {
+        "plugins": ["transform-remove-console"]
+      }
+    }
+  }
+}

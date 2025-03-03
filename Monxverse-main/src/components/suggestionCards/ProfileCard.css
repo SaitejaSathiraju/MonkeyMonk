@@ -1,0 +1,32 @@
+.button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6), -9px -9px 16px rgba(255, 255, 255, 0.5);
+  margin-bottom: 1em;
+  cursor: pointer;
+  box-shadow: 0px 0px 10px 6px rgba(0, 0, 0, 0.1);
+  color: white;
+}
+
+.facebook {
+  background: #3b5998;
+}
+
+.twitter {
+  background: #1da1f2;
+}
+
+.instagram {
+  background: linear-gradient(135deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+}
+
+.bg{
+  background: #8A2387;
+background: -webkit-linear-gradient(to bottom, #fcb814, rgb(197, 88, 21));  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #fcb814, rgb(197, 88, 21)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
